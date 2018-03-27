@@ -1,6 +1,6 @@
-# gba2
+# 后台系统管理
 
-> A Vue.js project
+>SPA单页应用
 
 ## Build Setup
 
@@ -17,5 +17,4 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-#项目结构
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 项目结构
