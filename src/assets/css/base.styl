@@ -1,0 +1,226 @@
+@import "variables.styl"
+
+/* space */
+marvalue = -1px;
+a
+  outline:none
+.page{
+  position: fixed;
+  left:170px;
+  top:54px;
+  right:0;
+  bottom:0;
+  background-color: #fff;
+  z-index: 2;
+  overflow:hidden;
+  overflow-y:auto;
+}
+.page .title
+  position relative
+  width 100%
+  height 48px
+  line-height 48px
+  background-color #fff
+  border-bottom 1px solid borderColor
+  padding:0 15px
+  box-sizing:border-box
+  .close
+    margin-top 18px
+    float:right
+    color red
+    font-size 16px!important
+    cursor pointer
+
+
+.p-r-15
+    padding-right:15px;
+.n-mar{
+    margin: marvalue;
+}
+.n-mar-l{
+    margin-left: marvalue;
+}
+.n-mar-t{
+    margin-top: marvalue;
+}
+.n-mar-r{
+    margin-right: marvalue;
+}
+.n-mar-b{
+    margin-bottom: marvalue;
+}
+//form
+.el-form-item__content{
+  line-height:32px;
+}
+.el-form-item{
+  margin :4px 0;
+}
+.el-input__inner{
+  height 30px
+  line-height 30px
+}
+.el-form-item__error{
+  position:static !important;
+}
+
+//登录页面
+.loginPage
+  position absolute
+  top:0
+  left 0
+  bottom:0
+  right:0
+
+.loginLogo
+  margin 70px 0 70px 130px
+
+.loginMain
+  position: absolute;
+  height:330px;
+  width: 100%;
+  background url("../../../static/imgs/loginbj.jpg") no-repeat 53% top;
+  background-color: #000;
+  //background-size: 627px 330px;
+  .loginForm
+    position: absolute;
+    width: 315px;
+    height:405px;
+    top:50%;
+    margin-top: -200px;
+    right:20%;
+    background: url("../../assets/imgs/borderline.png") no-repeat center top,
+      url("../../assets/imgs/borderline.png") no-repeat center bottom ;
+    background-size: 100%;
+    background-color: #fff;
+    .formHead
+      margin-top: 40px;
+      margin-left: 24px;
+      margin-bottom 20px
+  .el-form
+    padding 0 25px
+    margin: 0 auto;
+    .el-form-item
+      margin 10px 0
+      .el-input__inner
+        height:48px;
+        line-height: 48px;
+        padding-left 48px
+      .fa-icon
+        color #b9b9b9
+        position absolute
+        top:14px;
+        width: 20px;
+        height: 20px;
+        left:15px;
+    .forgetPsw
+      float: right;
+      font-size: 12px;
+      text-decoration: underline;
+      color:#619fee;
+      cursor: pointer
+    .verCodeInput
+      position relative
+      margin 0 !important
+
+.changeLoginWay
+  font-size 12px
+  float right
+  padding-right 25px
+  cursor pointer
+  color #97A8BE
+.phoneNumLogin
+  min-height:197px
+.phoneNumLogin,.accountLogin
+  .activePswIpt
+    width: 100%
+    margin 0 !important
+  .getActivePswBtn
+    margin-top 10px
+    width 100%
+
+.loginBtn
+  width :100%;
+  background-color :#428bca;
+  color: #fff;
+  text-align: center;
+  height:48px;
+  font-size: 15px ;
+
+.el-icon-check.successIcon
+  border: 2px solid #13ce66;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #13ce66;
+  margin-right: 50px;
+  font-size: 28px
+
+.enterLoginPage a
+  color: #1d90e6;
+  font-size: 14px;
+
+.checkboxWarp,.treeWarp
+  height:250px;
+  overflow hidden
+  overflow-y auto
+
+.selectWarp,.treeWarp
+  width:100%;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(191, 203, 217);
+  padding:10px;
+  box-sizing: border-box;
+  overflow:hidden
+  overflow-y auto
+
+.availableRole .el-checkbox.is-bordered
+  margin-left 0
+  margin-right 10px
+  width 160px
+  margin-bottom 8px
+
+.availableRole .el-checkbox.is-bordered+.el-checkbox.is-bordered
+  margin-left 0
+
+.el-textarea__inner,textarea{
+  resize: none !important;
+}
+
+//不可编辑样式
+.el-input.is-disabled .el-input__inner,.el-textarea.is-disabled .el-textarea__inner{
+  color:#383131 !important
+}
+.el-radio__input.is-disabled.is-checked .el-radio__inner,.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  background-color: rgb(106, 172, 239) !important;
+}
+.el-radio__input.is-disabled + .el-radio__label,.el-textarea.is-disabled .el-textarea__inner {
+  color:#333 !important
+}
+.el-cascader.is-disabled .el-cascader__label,.el-radio-button__orig-radio:disabled + .el-radio-button__inner {
+  color: #333 !important;
+}
+.el-button.is-disabled, .el-button.is-disabled:hover, .el-button.is-disabled:focus{color: #333 !important;}
+
+//下载导入模板
+.downloadTemplate
+  font-size:12px;
+  color:#79AFEE;
+  text-decoration: underline;
+  margin-top:20px;
+  cursor:pointer
+
+//导入提交loading层
+.importLoading{
+  display: inline-block
+}
+
+.formBox{
+  background-color: #fafafa;
+  padding-top: 20px;
+}
+.highHeight textarea{
+  height:100px;
+}
